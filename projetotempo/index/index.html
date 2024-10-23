@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<div class="container text-center">
+    <h1>🌞☔Previsão do Tempo☔🌞</h1>
+    <div class="input-group mb-3">
+        <input type="text" id="cityInput" class="form-control" placeholder="Digite o nome da cidade">
+        <div class="input-group-append">
+            <button id="searchBtn" class="custom-btn btn-15">buscar</button>
+        </div>
+        
+    </div>
+
+    <div id="weatherResult" class="result">
+        <h2>Previsão para hoje:</h2>
+        <div class="forecast-day"></div>
+        <h2>Previsão para os próximos 5 dias:</h2>
+        <div class="forecast-container">
+            <!-- Blocos de previsão serão inseridos aqui dinamicamente -->
+        </div>
+    </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="../js/index.js"></script>
+
+<footer>
+    <div class="container text-center">
+        <p> Aplicação web desenvovida por Gyovanna e Ana Letícia alunas de informatica.</p>
+    </div>
+</footer>
+
+</body>
+</html>

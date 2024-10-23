@@ -1,0 +1,109 @@
+/* index.css */
+
+body {
+    font-family: 'Kalnia Glaze', sans-serif;
+    background-image: url('../imagens/efeitos-climaticos.avif');
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: rgb(196, 70, 70);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    background-color: #4048b9c7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.forecast-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-gap: 10px; /* Espaçamento entre os blocos */
+    padding: 10px 0; /* Espaçamento vertical */
+}
+
+.forecast-day {
+    padding: 40px; /* Padding interno */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #5a3ace27;
+    box-sizing: border-box; /* Para incluir padding e borda nas dimensões */
+}
+
+.forecast-day img {
+    width: 180px; /* Define uma largura fixa menor */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Permite que a imagem seja responsiva */
+}
+
+.weather-icons {
+    width: 100px; /* Define a largura do ícone */
+    height: 100px; /* Define a altura do ícone */
+    background-size: cover; /* Cobre toda a área do elemento com o SVG */
+    background-position: center;
+    display: inline-block;
+}
+
+
+/* 15 */
+.btn-15 {
+    background: #463af1c4;
+    border: none;
+    z-index: 1;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #4823eb73;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(64, 44, 240, 0.479),
+     4px 4px 5px 0px rgba(64, 44, 240, 0.479);
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: #fff;
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }
+  
+  
+@media (max-width: 768px) {
+    .forecast-day {
+        flex: 0 0 45%; /* 2 items por linha em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .forecast-day {
+        flex: 0 0 90%; /* 1 item por linha em telas muito pequenas */
+    }
+}
